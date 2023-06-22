@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .head{
+            text-align: center;
+            font-size:80px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+        }
+
+        .number{
+            font-size: 90px;
+            font-weight: lighter;
+            text-align: center;
+        }
+        
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .buttons button{
+            padding: 12px 20px;
+            margin:0px 16px;
+            color: rgb(158, 158, 159);
+            background-color: rgb(23, 2, 53);
+            border-radius: 10px;
+            border-width: 0cm;
+            font-size: 26px;
+            font-weight: bold;
+            
+        }
+
+        .buttons button:hover{
+            background-color: rgb(30, 3, 69);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="head">Counter</h1>
+        <h1 class="number">0</h1>
+    </div>
+    
+    <div class="buttons" id="Counter">
+        <button id="decrease_btn" onclick="decrease()">Decrease</button>
+        <button id="reset_btn" onclick="reset()">Reset</button>
+        <button id="increase_btn" onclick="increase()">Increase</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
